@@ -1,5 +1,7 @@
 # Azure Text to Speech
 
-Takes an input file 'dw.txt' and converts it to .wav file.
+```bash
+node speak.js
+```
 
-dw.txt contains Byte Order Mark(BOM)
+Takes the file `dw.txt` and creates `dw.wav`.
