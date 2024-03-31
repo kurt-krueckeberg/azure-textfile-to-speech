@@ -4,4 +4,12 @@
 node speak.js
 ```
 
-Takes the file `dw.txt` and creates `dw.wav`.
+Takes `dw.txt` and creates `dw.wav`.
+
+## Prereqs
+
+Install Speech SDK:
+
+```bash
+npm install microsoft-cognitiveservices-speech-sdk
+```
