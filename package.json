@@ -1,4 +1,16 @@
 {
+  "name": "txt-to-speech",
+  "version": "1.0.0",
+  "description": "```bash node speak.js ```",
+  "main": "SpeechSynthesis.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "microsoft-cognitiveservices-speech-sdk": "^1.36.0"
   }
