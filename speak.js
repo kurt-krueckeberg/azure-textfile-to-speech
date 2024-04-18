@@ -8,8 +8,10 @@
     var fs = require('fs');
 
     var audioFile = "output.wav";
+
     // This example requires environment variables named "SPEECH_KEY" and "SPEECH_REGION"
-    const speechConfig = sdk.SpeechConfig.fromSubscription(process.env.SPEECH_KEY, process.env.SPEECH_REGION);
+    // const speechConfig = sdk.SpeechConfig.fromSubscription(process.env.SPEECH_KEY, process.env.SPEECH_REGION);
+    const speechConfig = sdk.SpeechConfig.fromSubscription('4deaf89075834283a48745ae530dc9d5', 'eastus');
     const audioConfig = sdk.AudioConfig.fromAudioFileOutput(audioFile);
 
     // The language of the voice that speaks.
@@ -18,7 +20,7 @@
     // Create the speech synthesizer.
     var synthesizer = new sdk.SpeechSynthesizer(speechConfig, audioConfig);
 
-    const text = fs.readFileSync('./dw.txt').toString()
+    const text = fs.readFileSync('./dw.txt').toString();
 
     // Start the synthesizer and wait for a result.
     synthesizer.speakTextAsync(text,
